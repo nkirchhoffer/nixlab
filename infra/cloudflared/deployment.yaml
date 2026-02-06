@@ -16,8 +16,9 @@ spec:
       - name: cloudflared
         image: cloudflare/cloudflared:latest
         command:
-        - tunnel
+        - cloudflared
         args:
+        - tunnel
         - --no-autoupdate
         - run
         - --token
