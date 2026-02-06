@@ -21,9 +21,8 @@ spec:
         - tunnel
         - --no-autoupdate
         - run
-        - --token ${CLOUDFLARED_TOKEN}
         env:
-        - name: CLOUDFLARED_TOKEN
+        - name: TUNNEL_TOKEN
           valueFrom:
             secretKeyRef:
               name: cloudflare-token
