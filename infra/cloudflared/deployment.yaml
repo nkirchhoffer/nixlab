@@ -21,8 +21,7 @@ spec:
         - tunnel
         - --no-autoupdate
         - run
-        - --token
-        - ${CLOUDFLARED_TOKEN}
+        - --token ${CLOUDFLARED_TOKEN}
         env:
         - name: CLOUDFLARED_TOKEN
           valueFrom:
